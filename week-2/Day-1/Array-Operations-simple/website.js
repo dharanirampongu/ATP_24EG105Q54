@@ -1,0 +1,11 @@
+const courses = ["javascript", "react", "node", "mongodb", "express"]
+let res=courses.filter(c=>c.length>=5)
+console.log(res)
+let res1=courses.map(c=>c.toUpperCase())
+console.log(res1)
+let res2=courses.map(c=>c.toUpperCase()).reduce((res2, c) => res2 + " | " + c )
+console.log(res2)
+let res3=courses.find(c=>c=="react")
+console.log(res3)
+let res4=courses.findIndex(c=>c=="node")
+console.log(res4)
