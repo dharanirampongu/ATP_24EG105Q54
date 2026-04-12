@@ -1,0 +1,75 @@
+### Get All Products
+GET http://localhost:4000/product-api/products
+
+###Get user details by Product
+GET http://localhost:4000/product-api/products/69b2758c3ad56412bbdf7b53
+
+###Create Product
+POST http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+    "productId":102,
+    "productName":"Tablet",
+    "price":15000,
+    "brand":"Lenovo"
+}
+
+###Update product
+PUT http://localhost:4000/product-api/products/69b2758c3ad56412bbdf7b53
+Content-Type: application/json
+
+{
+    "productId":102,
+    "productName":"TV",
+    "price":50000,
+    "brand":"panasonic"
+}
+
+###Delete product
+DELETE http://localhost:4000/product-api/products/69b2758c3ad56412bbdf7b53
+
+
+
+### Get All users(req to protected route)
+GET http://localhost:4000/user-api/users
+
+###Get user details by id
+GET http://localhost:4000/user-api/users
+
+###Create User
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "username":"kiran",
+    "password":"kiran",
+    "email":"kiran@mail.com",
+    "age":20
+}
+
+###Update User
+PUT http://localhost:4000/product-api/products/69b27dabe985bc93eb550ab1
+Content-Type: application/json
+
+{
+    "username":"bhanu",
+    "password":"bhanukumar",
+    "email":"bhanu@mail.com",
+    "age":25
+}
+
+###Delete User
+DELETE http://localhost:4000/user-api/users/69b27dabe985bc93eb550ab1
+
+### Add a product to user cart
+PUT http://localhost:4000/user-api/cart/product-id/69b27dabe985bc93eb550ab1
+
+###user login
+POST http://localhost:4000/user-api/login
+Content-Type: application/json
+
+{
+    "email":"kiran@mail.com",
+    "password":"kiran"
+}
