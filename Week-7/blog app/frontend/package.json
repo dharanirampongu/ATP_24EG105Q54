@@ -4,12 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "build": "react-scripts build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+  "dev": "vite",
+  "build": "vite build", 
+  "build:react": "react-scripts build",
+  "lint": "eslint .",
+  "preview": "vite preview"
+},
   "dependencies": {
     "@tailwindcss/vite": "^4.2.2",
     "axios": "^1.14.0",
