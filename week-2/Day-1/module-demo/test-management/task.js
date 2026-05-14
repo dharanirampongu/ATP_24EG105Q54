@@ -17,6 +17,6 @@ export function addTask(title, priority, dueDate) {
 
 // 2. Get all tasks
 export function getAllTasks() {
-  // Return all tasks
+// Return all tasks
   return tasks;
 }

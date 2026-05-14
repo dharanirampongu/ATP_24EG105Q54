@@ -1,3 +1,4 @@
+// app.js - Main application file for the shopping cart demo
 import {getAllProducts,searchProducts} from './product.js';
 import {addToCart,getCartItems,getCartTotal,updateQuantity,removeFromCart } from './cart.js';
 import { processPayment } from './payment.js';

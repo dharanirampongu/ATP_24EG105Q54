@@ -44,6 +44,7 @@ class Book{
         this.pages=pages;
         this.isAvailable=isAvailable;
     }
+    // Methods
     borrow()
     {
         if(this.isAvailable)
@@ -55,21 +56,25 @@ class Book{
             return false;
         }
     }
+    // Method to return the book
     returnBook()
     {
         this.isAvailable=true;
 
     }
+    // Method to get book information
     getInfo()
     {
         console.log(`${this.title} by ${this.author} (${this.pages} pages)`);
     }
+    // Method to check if the book is a long book
     isLongBook(pages)
     {
         return this.pages>300;
   
     }
 }
+// Create book objects
 let b1=new Book("Wings of fire","APJ Abdul Kalam",300,true)
 let b2=new Book("harry potter","Hobbit",200,true)
 let b3=new Book("Incredible","Epson",400,false)
@@ -90,8 +95,10 @@ console.log("\nAfter returning 1 book:");
 library.forEach(book => {
   console.log(`${book.title}-Available: ${book.isAvailable}`);
 });
+// Count long books
 const longBooksCount = library.filter(book => book.isLongBook()).length;
 console.log("Number of long books:", longBooksCount);
+// List available books
 const availableBooks = library.filter(book=>book.isAvailable);
 console.log("Available Books:");
 availableBooks.forEach(book=>book.getInfo());

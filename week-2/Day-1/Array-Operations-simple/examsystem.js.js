@@ -13,13 +13,18 @@
 //     5. findIndex() of mark 92
 
 const marks = [78, 92, 35, 88, 40, 67]
+//filter()
 let res=marks.filter(m=>m>=40)
 console.log(res)
+//map()
 let res1=marks.map(m=>m+5)
 console.log(res1)
+//reduce()
 let res2=marks.reduce((max, mark) => Math.max(max, mark), -Infinity)
 console.log(res2)
+//find()
 let res4=marks.find(m=>m<=40)
 console.log(res4)
+//findIndex()
 let res5=marks.findIndex(m=>m==92)
 console.log(res5)

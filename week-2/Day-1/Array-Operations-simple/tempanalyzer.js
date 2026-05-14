@@ -13,13 +13,18 @@
 //     5. findIndex() of temperature 28
 
 const temperatures = [32, 35, 28, 40, 38, 30, 42];
+//filter()
 let res=temperatures.filter((temp)=>temp>=35)
 console.log(res)
+//map()
 let res1=temperatures.map((temp)=>temp*9/5+32)
 console.log(res1)
+//reduce()
 let res2=temperatures.reduce((sum,temp)=>temp+sum,0)/temperatures.length
 console.log(res2)
+//find()
 let res3=temperatures.find(temp=>temp>40)
 console.log(res3)
+//findIndex()
 let res4=temperatures.findIndex(temp=>temp==28)
 console.log(res4)

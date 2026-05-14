@@ -11,6 +11,7 @@
 
 console.log("OTP sent successfully")
 let seconds=10
+// setInterval returns an ID which can be used to clear the interval later
 setInterval(()=>
 {
         seconds--;
